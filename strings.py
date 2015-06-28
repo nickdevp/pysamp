@@ -1,12 +1,13 @@
-#!/usr/bin/python
-        
+
+from __future__ import print_function
+
 # == REPLACEMENT ==
 # NOTE: case insensitive replacement requires 're' module
 text = "Hello World World"
-print text                                # "Hello World World"
-print text.replace("World", "Nick")       # "Hello Nick Nick"
-print text.replace("World", "Nick", 1)    # "Hello Nick World"
-print text                                # "Hello World World"
+print(text)                                # "Hello World World"
+print(text.replace("World", "Nick"))       # "Hello Nick Nick"
+print(text.replace("World", "Nick", 1))    # "Hello Nick World"
+print(text)                                # "Hello World World"
 
 # == SLICING ==
 # SYNTAX: text[start:end:step]
@@ -20,6 +21,6 @@ text = "Nick rocks"
 #  1 is before 'i' and after 'N'
 #  2 is before 'c' and after 'i'
 # -1 is before 's'   
-print text[0:4]                           # "Nick"
-print text[-5:]                           # "rocks"
-print text[-5:-3]                         # "ro"
+print(text[0:4])                           # "Nick"
+print(text[-5:])                           # "rocks"
+print(text[-5:-3])                         # "ro"
